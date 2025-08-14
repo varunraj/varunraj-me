@@ -8,6 +8,7 @@ import {
   FaCode,
   FaPhone,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -66,11 +67,11 @@ export default function Home() {
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">About</h2>
           <p className="text-gray-700 leading-relaxed">
-            I'm a builder-minded Product Manager who thrives at the intersection
-            of strategy, technology, and execution. Over my career, I've
-            operated as a Super IC—owning product vision while rolling up my
-            sleeves to design solutions, define architecture, and work alongside
-            engineers to ship high-impact products.
+            I&apos;m a builder-minded Product Manager who thrives at the
+            intersection of strategy, technology, and execution. Over my career,
+            I&apos;ve operated as a Super IC—owning product vision while rolling
+            up my sleeves to design solutions, define architecture, and work
+            alongside engineers to ship high-impact products.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
             I specialize in AI, data, and platform products, leading initiatives
@@ -93,8 +94,8 @@ export default function Home() {
                 Make something people want
               </h3>
               <p className="text-gray-700">
-                Borrowing from Y Combinator's core ethos, build solutions that
-                directly address genuine customer needs, focusing on real
+                Borrowing from Y Combinator&apos;s core ethos, build solutions
+                that directly address genuine customer needs, focusing on real
                 problems rather than following fleeting trends or untested
                 assumptions. As Marty Cagan teaches in <em>Inspired</em>, great
                 products are born from a relentless focus on understanding the
@@ -107,8 +108,8 @@ export default function Home() {
                 Iterate Toward Fit
               </h3>
               <p className="text-gray-700">
-                Following Dan Olsen's <em>Achieving Product-Market Fit</em>, I
-                validate assumptions early, iterate quickly, and use data to
+                Following Dan Olsen&apos;s <em>Achieving Product-Market Fit</em>
+                , I validate assumptions early, iterate quickly, and use data to
                 zero in on what truly resonates with users.
               </p>
             </div>
@@ -295,15 +296,17 @@ export default function Home() {
 
             <div className="border-l-4 border-blue-600 pl-6">
               <div className="flex items-start gap-4 mb-2">
-                <img
+                <Image
                   src="/bits.png"
                   alt="BITS Pilani"
-                  className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover flex-shrink-0"
                 />
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      Master's Degree, Software Engineering
+                      Master&apos;s Degree, Software Engineering
                     </h3>
                   </div>
                   <p className="text-blue-600 font-medium mb-2">
@@ -315,10 +318,12 @@ export default function Home() {
 
             <div className="border-l-4 border-purple-600 pl-6">
               <div className="flex items-start gap-4 mb-2">
-                <img
+                <Image
                   src="/cusat.png"
                   alt="Cochin University of Science and Technology"
-                  className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover flex-shrink-0"
                 />
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
