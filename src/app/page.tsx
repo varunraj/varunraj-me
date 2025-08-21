@@ -23,7 +23,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+  const [expandedCards, setExpandedCards] = useState<number[]>([0]);
 
   const toggleCard = (index: number) => {
     setExpandedCards((prev) =>
@@ -87,11 +87,12 @@ export default function Home() {
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">About</h2>
           <p className="text-gray-700 leading-relaxed">
-            I&apos;m a builder-minded Product Manager who thrives at the
-            intersection of strategy, technology, and execution. Over my career,
-            I&apos;ve operated as a Super IC—owning product vision while rolling
-            up my sleeves to design solutions, define architecture, and work
-            alongside engineers to ship high-impact products.
+            I&apos;m a Full-Stack Product Manager who thrives at the
+            intersection of strategy, technology, and execution. I own product
+            vision end-to-end—from discovery and roadmap definition to
+            architecture, design, and hands-on collaboration with engineering.
+            With a builder&apos;s mindset, I bridge business needs and technical
+            depth to ship high-impact, scalable products.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
             I specialize in AI, data, and platform products, leading initiatives
@@ -461,7 +462,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
 
           <div className="space-y-6">
-            <div className="border border-gray-200 rounded-lg p-6 bg-purple-50">
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <FaBriefcase className="text-purple-500 text-xl" />
@@ -480,7 +481,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6 bg-green-50">
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <FaCode className="text-green-500 text-xl" />
@@ -499,7 +500,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6 bg-blue-50">
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <FaRocket className="text-blue-500 text-xl" />
@@ -529,27 +530,29 @@ export default function Home() {
             <div className="border-l-4 border-blue-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Technology Consultant
+                  Engineering Product Manager
                 </h3>
-                <span className="text-sm text-gray-500">2023 - Present</span>
+                <span className="text-sm text-gray-500">
+                  Jun 2021 – Present
+                </span>
               </div>
-              <p className="text-blue-600 font-medium mb-2">Froedtert Health</p>
+              <p className="text-blue-600 font-medium mb-2">
+                Froedtert Health · Remote
+              </p>
               <ul className="text-gray-700 space-y-1">
                 <li>
-                  • Specialized in Healthcare, Pharmacy, and Supply Chain
-                  technology solutions
+                  • Lead digital health product initiatives, driving adoption of
+                  modern identity, access, and verification solutions
                 </li>
                 <li>
-                  • Led digital transformation initiatives and process
-                  optimization projects
+                  • Partner with engineering and clinical stakeholders to define
+                  product strategy, roadmaps, and requirements for
+                  patient-facing platforms
                 </li>
                 <li>
-                  • Implemented technology solutions to improve operational
-                  efficiency and patient care
-                </li>
-                <li>
-                  • Collaborated with cross-functional teams to deliver
-                  high-impact healthcare solutions
+                  • Manage delivery of cloud-native applications (TypeScript,
+                  Identity, AWS) ensuring scalability, compliance, and seamless
+                  user experience
                 </li>
               </ul>
             </div>
@@ -557,29 +560,28 @@ export default function Home() {
             <div className="border-l-4 border-green-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Technology Consultant
+                  Advisor / Senior Principal Consultant / Principal Consultant
                 </h3>
-                <span className="text-sm text-gray-500">2022 - 2023</span>
+                <span className="text-sm text-gray-500">
+                  Jan 2013 – Jun 2021
+                </span>
               </div>
               <p className="text-green-600 font-medium mb-2">
-                Various Healthcare Organizations
+                NTT DATA Services · Raleigh, NC & Toronto, Canada
               </p>
               <ul className="text-gray-700 space-y-1">
                 <li>
-                  • Provided strategic technology consulting across multiple
-                  healthcare domains
+                  • Delivered large-scale cloud and web application solutions
+                  for healthcare and enterprise clients, leveraging AWS,
+                  Node.js, and modern development frameworks
                 </li>
                 <li>
-                  • Led implementation of pharmacy management and supply chain
-                  optimization systems
+                  • Guided cross-functional teams through cloud migration,
+                  modernization, and digital transformation projects
                 </li>
                 <li>
-                  • Developed comprehensive technology roadmaps and digital
-                  transformation strategies
-                </li>
-                <li>
-                  • Managed stakeholder relationships and ensured successful
-                  project delivery
+                  • Provided technical leadership and architectural guidance
+                  across multiple client engagements
                 </li>
               </ul>
             </div>
@@ -587,25 +589,47 @@ export default function Home() {
             <div className="border-l-4 border-purple-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Software Engineer
+                  Consultant – Healthcare Consulting
                 </h3>
-                <span className="text-sm text-gray-500">2020 - 2022</span>
+                <span className="text-sm text-gray-500">
+                  May 2010 – Dec 2012
+                </span>
               </div>
               <p className="text-purple-600 font-medium mb-2">
-                Previous Experience
+                Cognizant Technology Solutions · Minneapolis, MN
               </p>
               <ul className="text-gray-700 space-y-1">
                 <li>
-                  • Developed and maintained software applications using modern
-                  technologies
+                  • Designed and delivered healthcare applications integrating
+                  payer and provider workflows
                 </li>
                 <li>
-                  • Collaborated with product teams to implement user-focused
-                  solutions
+                  • Built scalable SQL and Python-based solutions to improve
+                  claims processing and analytics
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-orange-600 pl-6">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Associate / Programmer Analyst
+                </h3>
+                <span className="text-sm text-gray-500">
+                  Mar 2004 – Jun 2008
+                </span>
+              </div>
+              <p className="text-orange-600 font-medium mb-2">
+                Cognizant Technology Solutions · Chennai, India
+              </p>
+              <ul className="text-gray-700 space-y-1">
+                <li>
+                  • Developed and maintained full-stack applications for
+                  healthcare insurance clients
                 </li>
                 <li>
-                  • Contributed to full-stack development projects and system
-                  architecture
+                  • Delivered functional and technical enhancements to core
+                  claims management systems
                 </li>
               </ul>
             </div>
@@ -622,18 +646,18 @@ export default function Home() {
             <div className="border-l-4 border-blue-900 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <div className="flex items-center gap-3">
-                  <Image
-                    src="/duke-logo.jpg"
-                    alt="Duke University"
-                    width={32}
-                    height={32}
-                    className="flex-shrink-0"
-                  />
+                  <div className="w-8 h-8 bg-blue-900 rounded flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-serif text-xs font-medium">
+                      Duke
+                    </span>
+                  </div>
                   <h3 className="text-lg font-semibold text-gray-900">
                     AI Product Management
                   </h3>
                 </div>
-                <span className="text-sm text-gray-500">In Progress, 2025</span>
+                <span className="text-sm font-semibold text-green-700 bg-green-100 px-2 py-1 rounded-full">
+                  In Progress, 2025
+                </span>
               </div>
               <p className="text-blue-900 font-medium mb-2">
                 Duke University / Coursera
@@ -688,8 +712,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      Master of Business Administration - MBA, Technology
-                      Innovation
+                      MBA, Technology Innovation
                     </h3>
                   </div>
                   <p className="text-green-600 font-medium mb-2">
@@ -711,7 +734,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      Master&apos;s Degree, Software Engineering
+                      MS, Software Engineering
                     </h3>
                   </div>
                   <p className="text-blue-600 font-medium mb-2">
@@ -733,7 +756,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      Bachelor of Engineering
+                      BE, Electronics Engineering
                     </h3>
                   </div>
                   <p className="text-purple-600 font-medium mb-2">
