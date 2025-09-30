@@ -39,7 +39,7 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Varun Raj</h1>
             <p className="text-xl text-gray-600 mb-2">
-              Full-Stack Product Manager
+              Product Builder
             </p>
             <p className="text-lg text-gray-500 mb-4">
               Bridging AI fluency, technical depth, and product leadership
@@ -87,19 +87,13 @@ export default function Home() {
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">About</h2>
           <p className="text-gray-700 leading-relaxed">
-            I&apos;m a Full-Stack Product Manager who thrives at the
+            I&apos;m a Full-Stack Product Manager and <strong className="text-gray-900">Product Builder</strong> who thrives at the
             intersection of strategy, technology, and execution. I own product
             vision end-to-end—from discovery and roadmap definition to
-            architecture, design, and hands-on collaboration with engineering.
-            With a builder&apos;s mindset, I bridge business needs and technical
-            depth to ship high-impact, scalable products.
+            architecture, design, and hands-on collaboration with engineering—while also having the technical fluency to directly shape and deliver production-ready applications.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            I specialize in AI, data, and platform products, leading initiatives
-            from first idea → shipped product while keeping user needs and
-            market signals at the core. My approach blends deep technical
-            fluency with a disciplined product mindset—turning big ideas into
-            scalable, impactful solutions.
+            As a <strong className="text-gray-900">Product Builder</strong>, I bring the mindset of a full-stack PM who can go beyond traditional product ownership: not only defining strategy and user needs, but also bridging into architecture, data, and engineering execution to ensure high-impact products are shipped. I specialize in AI, data, and platform products, translating bold ideas into scalable, market-ready solutions that balance user value with technical depth.
           </p>
         </section>
 
