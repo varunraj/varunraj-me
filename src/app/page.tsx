@@ -18,6 +18,7 @@ import {
   FaSearch,
   FaShieldAlt,
   FaChartLine,
+  FaDumbbell,
 } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
@@ -48,6 +49,8 @@ export default function Home() {
               <a
                 href="mailto:varunraj82@gmail.com"
                 className="flex items-center space-x-2 hover:text-blue-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaEnvelope />
                 <span>varunraj82@gmail.com</span>
@@ -55,6 +58,8 @@ export default function Home() {
               <a
                 href="tel:+19194506245"
                 className="flex items-center space-x-2 hover:text-blue-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaPhone />
                 <span>(919) 450-6245</span>
@@ -68,12 +73,16 @@ export default function Home() {
               <a
                 href="https://github.com/varunraj"
                 className="text-gray-500 hover:text-gray-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub size={24} />
               </a>
               <a
                 href="https://linkedin.com/in/varunraj537"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin size={24} />
               </a>
@@ -192,16 +201,17 @@ export default function Home() {
                 <div className="flex justify-between items-start">
                   <div className="flex items-start gap-4 flex-1">
                     <div className="flex-shrink-0 mt-1">
-                      <FaSearch className="text-blue-500 text-xl" />
+                      <FaDumbbell className="text-blue-500 text-xl" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        Precedent AI – Legal Research Assistant (Personal
-                        Project)
+                        🏋️‍♂️ Coach Kai – AI-Powered Personal Health & Nutrition Coach
+                        (Founder Project)
                       </h3>
                       <p className="text-gray-700">
-                        A personal AI project to explore retrieval-augmented
-                        generation (RAG) for legal research.
+                        A voice-first agentic system that interprets daily
+                        meal/exercise logs, tracks progress, and provides
+                        personalized coaching guidance.
                       </p>
                     </div>
                   </div>
@@ -224,45 +234,54 @@ export default function Home() {
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
-                          • Defined product vision, success metrics, and user
-                          flows
+                          • Identified user need around frictionless food/exercise
+                          logging and motivation feedback loops
                         </li>
                         <li>
-                          • Designed backend using AWS Bedrock (LLM inference)
-                          and DynamoDB
-                        </li>
-                        <li>• Built Next.js frontend deployed on Vercel</li>
-                        <li>
-                          • Authored evaluation framework for accuracy and
-                          citations
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        Outcome:
-                      </h4>
-                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
-                        <li>
-                          • Delivered working prototype demonstrating AI legal
-                          queries with verifiable citations
+                          • Defined product vision, behavioral change goals, and
+                          success metrics (daily logging adherence & nutritional
+                          balance)
                         </li>
                         <li>
-                          • Achieved 85% accuracy rate on legal precedent
-                          retrieval
+                          • Designed voice → transcript → structured intent parsing
+                          pipeline for meal/exercise/sleep events
+                        </li>
+                        <li>
+                          • Built backend using AWS (Lambda, DynamoDB, S3) with
+                          memory-based user state and structured log history
+                        </li>
+                        <li>
+                          • Implemented LLM parsing + nutrition enrichment using
+                          GPT models with JSON schema validation
+                        </li>
+                        <li>
+                          • Developed Next.js + Expo mobile UI for daily summaries
+                          and trend visualization
+                        </li>
+                        <li>
+                          • Authored evaluation framework for parser accuracy,
+                          latency, and coaching quality
+                        </li>
+                        <li>
+                          • Ran iterative usability testing to refine tone, flow,
+                          and friction points
                         </li>
                       </ul>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <a
-                        href="#"
+                        href="http://coachkai.life/"
                         className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Live Demo
                       </a>
                       <a
-                        href="#"
+                        href="https://github.com/varunraj/kai-app"
                         className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         GitHub Repo
                       </a>
@@ -345,12 +364,16 @@ export default function Home() {
                       <a
                         href="#"
                         className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         PDF Document
                       </a>
                       <a
                         href="#"
                         className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Case Study
                       </a>
@@ -434,12 +457,16 @@ export default function Home() {
                       <a
                         href="#"
                         className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full hover:bg-purple-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Live Demo
                       </a>
                       <a
                         href="#"
                         className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Case Study
                       </a>
@@ -637,38 +664,38 @@ export default function Home() {
           </h2>
 
           <div className="space-y-8">
-            <div className="border-l-4 border-blue-900 pl-6">
+            <div className="border-l-4 border-teal-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-blue-900 rounded flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-serif text-xs font-medium">
-                      Duke
+                  <div className="w-8 h-8 bg-teal-600 rounded flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xs font-semibold">
+                      AI
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    AI Product Management
+                    Agentic AI Certificate
                   </h3>
                 </div>
-                <span className="text-sm font-semibold text-green-700 bg-green-100 px-2 py-1 rounded-full">
-                  In Progress, 2025
+                <span className="text-sm font-semibold text-teal-700 bg-teal-100 px-2 py-1 rounded-full">
+                  Completed, 2025
                 </span>
               </div>
-              <p className="text-blue-900 font-medium mb-2">
-                Duke University / Coursera
+              <p className="text-teal-700 font-medium mb-2">
+                DeepLearning.AI
               </p>
               <p className="text-gray-700">
-                Advanced certification program focused on AI product management,
-                covering LLM applications, responsible AI practices, and product
-                strategy for AI-powered solutions.
+                Hands-on program led by Andrew Ng on building agentic AI systems
+                that orchestrate tools, automate workflows, and deliver measurable
+                business outcomes.
               </p>
               <div className="mt-3">
                 <a
-                  href="https://www.coursera.org/specializations/ai-product-management-duke"
+                  href="https://www.deeplearning.ai/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors"
                 >
-                  <span>View Course Details</span>
+                  <span>View Program</span>
                   <svg
                     className="w-4 h-4 ml-1"
                     fill="none"
