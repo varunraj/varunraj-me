@@ -121,7 +121,7 @@ export default function Home() {
 
         {/* AI Product Principles Section */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
             AI Product Principles
           </h2>
 
