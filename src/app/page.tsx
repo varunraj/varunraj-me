@@ -7,21 +7,21 @@ import {
   FaMapMarkerAlt,
   FaGraduationCap,
   FaBriefcase,
-  FaCode,
   FaPhone,
   FaHeart,
-  FaRocket,
-  FaRoute,
+  FaPuzzlePiece,
+  FaTools,
   FaBalanceScale,
   FaChevronDown,
   FaChevronUp,
+  FaExternalLinkAlt,
+  FaFilePdf,
+  FaProjectDiagram,
   FaSearch,
-  FaShieldAlt,
-  FaChartLine,
-  FaDumbbell,
 } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
+import { SiAppstore, SiGoogleplay } from "react-icons/si";
 
 export default function Home() {
   const [expandedCards, setExpandedCards] = useState<number[]>([0]);
@@ -39,11 +39,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Varun Raj</h1>
-            <p className="text-xl text-gray-600 mb-2">
-              Product Builder
-            </p>
+            <p className="text-xl text-gray-600 mb-2">AI Product Builder</p>
             <p className="text-lg text-gray-500 mb-4">
-              Bridging AI fluency, technical depth, and product leadership
+              Building AI-powered products end to end—from idea to production to growth
             </p>
             <div className="flex justify-center space-x-6 text-gray-500">
               <a
@@ -96,20 +94,35 @@ export default function Home() {
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">About</h2>
           <p className="text-gray-700 leading-relaxed">
-            I&apos;m a Full-Stack Product Manager and <strong className="text-gray-900">Product Builder</strong> who thrives at the
-            intersection of strategy, technology, and execution. I own product
-            vision end-to-end—from discovery and roadmap definition to
-            architecture, design, and hands-on collaboration with engineering—while also having the technical fluency to directly shape and deliver production-ready applications.
+            I&apos;m an <strong className="text-gray-900">AI Product Builder</strong> who takes ideas all the way from concept to real, working products in the hands of users.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            As a <strong className="text-gray-900">Product Builder</strong>, I bring the mindset of a full-stack PM who can go beyond traditional product ownership: not only defining strategy and user needs, but also bridging into architecture, data, and engineering execution to ensure high-impact products are shipped. I specialize in AI, data, and platform products, translating bold ideas into scalable, market-ready solutions that balance user value with technical depth.
+            I operate across the full lifecycle—<strong className="text-gray-900">user research, product strategy, AI system design, full-stack development, and production deployment.</strong>{" "}
+            I don&apos;t just define what to build; I build it, ship it, and iterate based on real usage and feedback.
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            My work sits at the intersection of{" "}
+            <strong className="text-gray-900">AI, product thinking, and engineering execution</strong>. I design intelligent systems (prompting, RAG, insights pipelines), build scalable backends and frontends, and ensure products are not just technically sound—but actually useful and engaging.
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-4 font-medium text-gray-900">
+            I bring a builder mindset to product development:
+          </p>
+          <ul className="list-disc list-inside text-gray-700 leading-relaxed mt-2 space-y-2 ml-1">
+            <li>Start with real user problems</li>
+            <li>Ship quickly and learn from usage</li>
+            <li>Validate value before scaling</li>
+            <li>Continuously refine based on data and behavior</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            I specialize in{" "}
+            <strong className="text-gray-900">AI-driven products and platforms</strong>, translating ideas into production-ready systems that balance user value, technical depth, and speed of execution.
           </p>
         </section>
 
-        {/* Core Product Principles Section */}
+        {/* AI Product Principles Section */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Guiding Product Principles
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 tracking-tight">
+            AI Product Principles
           </h2>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -120,13 +133,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Make something people want
+                    Build What Actually Matters
                   </h3>
-                  <p className="text-gray-700 text-sm">
-                    Borrowing from Y Combinator&apos;s core ethos, build
-                    solutions that directly address genuine customer needs,
-                    focusing on real problems rather than following fleeting
-                    trends or untested assumptions.
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I focus on real user problems, not ideas that sound good in theory. Every product starts with understanding behavior, needs, and friction—then building solutions people genuinely use.
                   </p>
                 </div>
               </div>
@@ -135,17 +145,14 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-blue-50">
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 mt-1">
-                  <FaRocket className="text-blue-500 text-xl" />
+                  <FaPuzzlePiece className="text-blue-500 text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Iterate Toward Fit
+                    Iterate to Real-World Fit
                   </h3>
-                  <p className="text-gray-700 text-sm">
-                    Following Dan Olsen&apos;s{" "}
-                    <em>Achieving Product-Market Fit</em>, I validate
-                    assumptions early, iterate quickly, and use data to zero in
-                    on what truly resonates with users.
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I ship fast, learn from real usage, and refine continuously. Product–market fit isn&apos;t guessed—it&apos;s discovered through cycles of building, measuring, and improving.
                   </p>
                 </div>
               </div>
@@ -154,16 +161,14 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-green-50">
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 mt-1">
-                  <FaRoute className="text-green-500 text-xl" />
+                  <FaTools className="text-green-600 text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Own the End-to-End Journey
+                    Own the Full Stack
                   </h3>
-                  <p className="text-gray-700 text-sm">
-                    I believe a PM should shepherd a product from concept
-                    through launch and beyond—connecting strategy, execution,
-                    and iteration seamlessly.
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I take products end to end—from user research and UX to AI systems, backend, frontend, and production deployment. I don&apos;t stop at strategy—I make it real.
                   </p>
                 </div>
               </div>
@@ -176,11 +181,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Balance Vision with Evidence
+                    Balance Intuition with Data
                   </h3>
-                  <p className="text-gray-700 text-sm">
-                    Big ideas inspire, but they must be grounded in user
-                    insights, market signals, and measurable outcomes.
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Strong product instincts matter, but decisions are grounded in user behavior, system signals, and measurable outcomes—not opinions alone.
                   </p>
                 </div>
               </div>
@@ -199,20 +203,56 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg hover:shadow-md transition-shadow bg-blue-50">
               <div className="p-6 cursor-pointer" onClick={() => toggleCard(0)}>
                 <div className="flex justify-between items-start">
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="flex-shrink-0 mt-1">
-                      <FaDumbbell className="text-blue-500 text-xl" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        🏋️‍♂️ Coach Kai – AI-Powered Personal Health & Nutrition Coach
-                        (Founder Project)
-                      </h3>
-                      <p className="text-gray-700">
-                        A voice-first agentic system that interprets daily
-                        meal/exercise logs, tracks progress, and provides
-                        personalized coaching guidance.
-                      </p>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Coach Kai – AI-Powered Personal Health & Nutrition Coach
+                      (AI Product Builder | Founder Project)
+                    </h3>
+                    <p className="text-gray-700">
+                      A voice-first AI coaching system that transforms daily food
+                      and activity logs into personalized, behavior-driven
+                      guidance.
+                    </p>
+                    <div
+                      className="flex flex-wrap items-center gap-2 mt-3"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <a
+                        href="http://coachkai.life/"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaExternalLinkAlt
+                          className="text-base text-blue-700 shrink-0"
+                          aria-hidden
+                        />
+                        <span>Product Demo</span>
+                      </a>
+                      <a
+                        href="https://apps.apple.com/us/app/coach-kai/id6759616598"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiAppstore
+                          className="text-[1.35rem] text-gray-900 shrink-0"
+                          aria-hidden
+                        />
+                        <span>App Store</span>
+                      </a>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.coachkai.app&hl=en-US&ah=Txs8zCRf4kUikQDQAKYSG-cwuNw"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-emerald-900 bg-white/90 border border-emerald-200 shadow-sm hover:bg-emerald-50 hover:border-emerald-300 hover:shadow-md transition-all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiGoogleplay
+                          className="text-[1.35rem] shrink-0"
+                          aria-hidden
+                        />
+                        <span>Google Play</span>
+                      </a>
                     </div>
                   </div>
                   <div className="flex-shrink-0 ml-4">
@@ -230,61 +270,75 @@ export default function Home() {
                   <div className="pt-4 space-y-4">
                     <div>
                       <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        My Role & Contribution:
+                        Product &amp; Build Approach:
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
-                          • Identified user need around frictionless food/exercise
-                          logging and motivation feedback loops
+                          • Identified a real user problem around inconsistent
+                          logging and lack of actionable feedback in traditional
+                          calorie trackers, and defined a differentiated
+                          &quot;AI coach, not tracker&quot; product direction
                         </li>
                         <li>
-                          • Defined product vision, behavioral change goals, and
-                          success metrics (daily logging adherence & nutritional
-                          balance)
+                          • Took product from 0 → 1: concept, positioning, UX
+                          design, full-stack development, deployment, and early
+                          user testing
                         </li>
                         <li>
-                          • Designed voice → transcript → structured intent parsing
-                          pipeline for meal/exercise/sleep events
+                          • Designed an agent-like system that interprets user
+                          inputs (voice/text), maintains context over time, and
+                          delivers adaptive coaching insights
                         </li>
                         <li>
-                          • Built backend using AWS (Lambda, DynamoDB, S3) with
-                          memory-based user state and structured log history
+                          • Built end-to-end system using React Native (Expo),
+                          AWS serverless (Lambda, DynamoDB, S3), and LLM-powered
+                          pipelines for structured nutrition analysis
                         </li>
                         <li>
-                          • Implemented LLM parsing + nutrition enrichment using
-                          GPT models with JSON schema validation
+                          • Developed a structured insight engine (daily + weekly
+                          signals) combining deterministic logic with LLM
+                          summarization for consistent coaching outputs
                         </li>
                         <li>
-                          • Developed Next.js + Expo mobile UI for daily summaries
-                          and trend visualization
-                        </li>
-                        <li>
-                          • Authored evaluation framework for parser accuracy,
-                          latency, and coaching quality
-                        </li>
-                        <li>
-                          • Ran iterative usability testing to refine tone, flow,
-                          and friction points
+                          • Implemented analytics (PostHog) and feedback loops to
+                          track user behavior, retention, and feature
+                          effectiveness
                         </li>
                       </ul>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href="http://coachkai.life/"
-                        className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                      <a
-                        href="https://github.com/varunraj/kai-app"
-                        className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        GitHub Repo
-                      </a>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        Iteration &amp; Growth:
+                      </h4>
+                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
+                        <li>
+                          • Ran continuous build–measure–learn cycles: usability
+                          testing, prompt tuning, flow optimization, and
+                          onboarding refinement
+                        </li>
+                        <li>
+                          • Experimented with messaging, positioning, and early
+                          growth strategies (landing pages, user outreach,
+                          feedback interviews)
+                        </li>
+                        <li>
+                          • Balanced product decisions across UX, technical
+                          feasibility, and business model (free vs premium,
+                          engagement loops, habit formation)
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        Outcome:
+                      </h4>
+                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
+                        <li>
+                          • Shipped a production-ready AI-powered mobile app with
+                          real users, demonstrating end-to-end ownership across
+                          product, engineering, and early-stage growth
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -295,19 +349,46 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg hover:shadow-md transition-shadow bg-green-50">
               <div className="p-6 cursor-pointer" onClick={() => toggleCard(1)}>
                 <div className="flex justify-between items-start">
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="flex-shrink-0 mt-1">
-                      <FaShieldAlt className="text-green-500 text-xl" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        Okta Identity Engine Migration PRD (Work Product)
-                      </h3>
-                      <p className="text-gray-700">
-                        Product requirements document outlining strategy and
-                        execution for migrating patient accounts from Okta
-                        Classic to Okta Identity Engine.
-                      </p>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Clear Identity Verification for New Accounts (AI Product
+                      Builder | Identity Migration Initiative)
+                    </h3>
+                    <p className="text-gray-700">
+                      Led the end-to-end design and implementation of a modern
+                      identity verification system, transitioning from a
+                      traditional identity provider model to a streamlined,
+                      &ldquo;clear identity&rdquo; experience with minimal user
+                      friction.
+                    </p>
+                    <div
+                      className="flex flex-wrap items-center gap-2 mt-3"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <a
+                        href="/a2ecdb7a-437a-4715-a221-251007ea4fcc_Clear_Identity_Verification_for_new_accounts.pdf"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-green-900 bg-white/90 border border-green-300 shadow-sm hover:bg-green-100/80 hover:border-green-400 hover:shadow-md transition-all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaFilePdf
+                          className="text-[1.35rem] text-red-600 shrink-0"
+                          aria-hidden
+                        />
+                        <span>PRD</span>
+                      </a>
+                      <a
+                        href="https://mermaid.ai/view/f1b01c96-aeae-4c24-9ba1-9725e86fc21e"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-teal-900 bg-white/90 border border-teal-300 shadow-sm hover:bg-teal-50 hover:border-teal-400 hover:shadow-md transition-all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaProjectDiagram
+                          className="text-base text-teal-700 shrink-0"
+                          aria-hidden
+                        />
+                        <span>System Design</span>
+                      </a>
                     </div>
                   </div>
                   <div className="flex-shrink-0 ml-4">
@@ -325,23 +406,54 @@ export default function Home() {
                   <div className="pt-4 space-y-4">
                     <div>
                       <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        My Role & Contribution:
+                        Product &amp; Build Approach:
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
-                          • Led cross-functional stakeholder alignment and
-                          requirements gathering
+                          • Translated a high-level business objective (modernize
+                          identity verification) into a concrete, end-to-end
+                          product strategy and execution plan
                         </li>
                         <li>
-                          • Designed migration strategy with minimal user
-                          disruption
+                          • Took ownership from 0 → production: authored PRD,
+                          designed flows, configured vendor solution (Clear), and
+                          implemented the full verification experience
                         </li>
                         <li>
-                          • Created comprehensive risk assessment and mitigation
-                          plan
+                          • Operated in an AI-native, builder-led
+                          model—personally driving solution design, prototyping,
+                          and implementation while aligning with design,
+                          engineering, and security stakeholders
                         </li>
                         <li>
-                          • Developed testing framework for identity validation
+                          • Collaborated directly with vendor to integrate
+                          identity verification workflows into existing
+                          authentication systems (Okta)
+                        </li>
+                        <li>
+                          • Designed and validated complete user journeys,
+                          including account creation, identity verification, and
+                          fallback/error handling scenarios
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        Execution &amp; Iteration:
+                      </h4>
+                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
+                        <li>
+                          • Replaced traditional handoff model with a
+                          build-and-align approach: rapidly iterated on flows,
+                          gathered stakeholder feedback, and refined in real time
+                        </li>
+                        <li>
+                          • Developed validation and testing framework to ensure
+                          identity accuracy, reliability, and edge case coverage
+                        </li>
+                        <li>
+                          • Created risk assessment and mitigation strategy,
+                          including staged rollout and preview environment testing
                         </li>
                       </ul>
                     </div>
@@ -351,125 +463,21 @@ export default function Home() {
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
-                          • Published technical PRD used for internal
+                          • Successfully delivered a production-ready identity
+                          verification system with reduced user friction and
+                          improved onboarding experience
+                        </li>
+                        <li>
+                          • Demonstrated a new execution model within the
+                          organization, showing how AI-enabled, end-to-end
+                          ownership can accelerate delivery while maintaining
                           stakeholder alignment
                         </li>
                         <li>
-                          • Reduced identity migration risk by introducing
-                          preview environment strategy
+                          • PRD and implementation approach adopted as a reference
+                          for similar initiatives
                         </li>
                       </ul>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href="#"
-                        className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full hover:bg-green-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        PDF Document
-                      </a>
-                      <a
-                        href="#"
-                        className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Case Study
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Work Product 3 */}
-            <div className="border border-gray-200 rounded-lg hover:shadow-md transition-shadow bg-purple-50">
-              <div className="p-6 cursor-pointer" onClick={() => toggleCard(2)}>
-                <div className="flex justify-between items-start">
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="flex-shrink-0 mt-1">
-                      <FaChartLine className="text-purple-500 text-xl" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        Healthcare Supply Chain Analytics Dashboard (Work
-                        Product)
-                      </h3>
-                      <p className="text-gray-700">
-                        Real-time analytics platform for monitoring and
-                        optimizing healthcare supply chain operations across
-                        multiple facilities.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0 ml-4">
-                    {expandedCards.includes(2) ? (
-                      <FaChevronUp className="text-gray-500" />
-                    ) : (
-                      <FaChevronDown className="text-gray-500" />
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {expandedCards.includes(2) && (
-                <div className="px-6 pb-6 border-t border-gray-100">
-                  <div className="pt-4 space-y-4">
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        My Role & Contribution:
-                      </h4>
-                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
-                        <li>
-                          • Conducted user research with supply chain managers
-                          and procurement teams
-                        </li>
-                        <li>
-                          • Designed data architecture for real-time inventory
-                          tracking
-                        </li>
-                        <li>
-                          • Built interactive dashboard using React and D3.js
-                        </li>
-                        <li>
-                          • Implemented automated alerting system for low stock
-                          scenarios
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        Outcome:
-                      </h4>
-                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
-                        <li>
-                          • Reduced stockout incidents by 40% across 15
-                          facilities
-                        </li>
-                        <li>
-                          • Deployed to production serving 500+ daily active
-                          users
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href="#"
-                        className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full hover:bg-purple-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                      <a
-                        href="#"
-                        className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full hover:bg-gray-200 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Case Study
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -485,18 +493,17 @@ export default function Home() {
           <div className="space-y-6">
             <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 mt-1">
-                  <FaBriefcase className="text-purple-500 text-xl" />
-                </div>
+                <span className="text-2xl shrink-0 leading-none mt-0.5" aria-hidden>
+                  🧠
+                </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Core PM
+                    AI Systems &amp; Applications
                   </h3>
                   <p className="text-gray-700">
-                    Product Discovery & Strategy, Roadmapping, PRD Authoring &
-                    Specs, Agile/Scrum Execution, Stakeholder Alignment &
-                    Communication, Metrics/KPI Definition, Data-Informed
-                    Decision-Making, Go-to-Market Planning
+                    LLM application design, prompt engineering, RAG pipelines,
+                    structured outputs, evaluation frameworks, feedback loops,
+                    AI-driven insights systems
                   </p>
                 </div>
               </div>
@@ -504,18 +511,17 @@ export default function Home() {
 
             <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 mt-1">
-                  <FaCode className="text-green-500 text-xl" />
-                </div>
+                <span className="text-2xl shrink-0 leading-none mt-0.5" aria-hidden>
+                  ⚙️
+                </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Technical
+                    Full-Stack &amp; Infrastructure
                   </h3>
                   <p className="text-gray-700">
-                    AWS Serverless (Lambda, Step Functions, EventBridge,
-                    DynamoDB, S3, API Gateway, AppSync, SNS/SQS, Bedrock,
-                    Cognito), Identity & Access Management, Next.js (Vercel),
-                    REST
+                    AWS serverless (Lambda, API Gateway, DynamoDB, Step Functions,
+                    EventBridge), Bedrock, Cognito, REST APIs, Next.js, React
+                    Native, Vercel, scalable system design
                   </p>
                 </div>
               </div>
@@ -523,16 +529,17 @@ export default function Home() {
 
             <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 mt-1">
-                  <FaRocket className="text-blue-500 text-xl" />
-                </div>
+                <span className="text-2xl shrink-0 leading-none mt-0.5" aria-hidden>
+                  📊
+                </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    AI Product
+                    Product &amp; Growth Execution
                   </h3>
                   <p className="text-gray-700">
-                    LLM Application Design, Prompt Engineering, RAG Pipelines,
-                    Model Evaluation Frameworks, Responsible AI
+                    User discovery, rapid prototyping, analytics (PostHog),
+                    experimentation, product-market fit validation, onboarding and
+                    retention optimization
                   </p>
                 </div>
               </div>
@@ -657,64 +664,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Certifications Section */}
-        <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Certifications
-          </h2>
-
-          <div className="space-y-8">
-            <div className="border-l-4 border-teal-600 pl-6">
-              <div className="flex justify-between items-start mb-2">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-teal-600 rounded flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xs font-semibold">
-                      AI
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Agentic AI Certificate
-                  </h3>
-                </div>
-                <span className="text-sm font-semibold text-teal-700 bg-teal-100 px-2 py-1 rounded-full">
-                  Completed, 2025
-                </span>
-              </div>
-              <p className="text-teal-700 font-medium mb-2">
-                DeepLearning.AI
-              </p>
-              <p className="text-gray-700">
-                Hands-on program led by Andrew Ng on building agentic AI systems
-                that orchestrate tools, automate workflows, and deliver measurable
-                business outcomes.
-              </p>
-              <div className="mt-3">
-                <a
-                  href="https://www.deeplearning.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors"
-                >
-                  <span>View Program</span>
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Education Section */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <div className="flex items-center mb-6">
@@ -723,6 +672,59 @@ export default function Home() {
           </div>
 
           <div className="space-y-8">
+            <div className="border-l-4 border-teal-600 pl-6">
+              <div className="flex items-start gap-4 mb-2">
+                <Image
+                  src="/dl.png"
+                  alt="DeepLearning.AI"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <div className="flex flex-wrap justify-between items-start gap-2 mb-2">
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      Agentic AI Certificate
+                    </h3>
+                    <span className="text-sm font-semibold text-teal-700 bg-teal-100 px-2 py-1 rounded-full shrink-0">
+                      Completed, 2025
+                    </span>
+                  </div>
+                  <p className="text-teal-700 font-medium mb-2">
+                    DeepLearning.AI
+                  </p>
+                  <p className="text-gray-700">
+                    Hands-on program led by Andrew Ng on building agentic AI systems
+                    that orchestrate tools, automate workflows, and deliver measurable
+                    business outcomes.
+                  </p>
+                  <div className="mt-3">
+                    <a
+                      href="https://learn.deeplearning.ai/courses/agentic-ai/information"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors"
+                    >
+                      <span>View Program</span>
+                      <svg
+                        className="w-4 h-4 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="border-l-4 border-green-600 pl-6">
               <div className="flex items-start gap-4 mb-2">
                 <div className="w-12 h-12 bg-black rounded flex items-center justify-center flex-shrink-0">
@@ -733,7 +735,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      MBA, Technology Innovation
+                      Masters, Technology Innovation
                     </h3>
                   </div>
                   <p className="text-green-600 font-medium mb-2">
