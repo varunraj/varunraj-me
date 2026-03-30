@@ -17,7 +17,6 @@ import {
   FaExternalLinkAlt,
   FaFilePdf,
   FaProjectDiagram,
-  FaSearch,
 } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
