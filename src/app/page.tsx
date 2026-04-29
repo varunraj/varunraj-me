@@ -38,9 +38,8 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Varun Raj</h1>
-            <p className="text-xl text-gray-600 mb-2">AI Product Builder</p>
-            <p className="text-lg text-gray-500 mb-4">
-              Building AI-powered products end to end—from idea to production to growth
+            <p className="text-xl text-gray-600 mb-2">
+              Technical Product Manager, AI Product Builder
             </p>
             <div className="flex justify-center space-x-6 text-gray-500">
               <a
@@ -93,28 +92,25 @@ export default function Home() {
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">About</h2>
           <p className="text-gray-700 leading-relaxed">
-            I&apos;m an <strong className="text-gray-900">AI Product Builder</strong> who takes ideas all the way from concept to real, working products in the hands of users.
+            I&apos;m a{" "}
+            <strong className="text-gray-900">
+              Technical Product Manager and AI Builder
+            </strong>{" "}
+            with deep technical expertise in cloud-native systems, AI-native products,
+            and full-stack product development.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            I operate across the full lifecycle—<strong className="text-gray-900">user research, product strategy, AI system design, full-stack development, and production deployment.</strong>{" "}
-            I don&apos;t just define what to build; I build it, ship it, and iterate based on real usage and feedback.
+            I&apos;ve led patient-facing digital health products, identity platform
+            transformations, and 0 → 1 AI product development across mobile, web,
+            and cloud infrastructure. My experience spans product strategy, user
+            research, roadmap ownership, AI system design, full-stack development,
+            and production delivery.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            My work sits at the intersection of{" "}
-            <strong className="text-gray-900">AI, product thinking, and engineering execution</strong>. I design intelligent systems (prompting, RAG, insights pipelines), build scalable backends and frontends, and ensure products are not just technically sound—but actually useful and engaging.
-          </p>
-          <p className="text-gray-700 leading-relaxed mt-4 font-medium text-gray-900">
-            I bring a builder mindset to product development:
-          </p>
-          <ul className="list-disc list-inside text-gray-700 leading-relaxed mt-2 space-y-2 ml-1">
-            <li>Start with real user problems</li>
-            <li>Ship quickly and learn from usage</li>
-            <li>Validate value before scaling</li>
-            <li>Continuously refine based on data and behavior</li>
-          </ul>
-          <p className="text-gray-700 leading-relaxed mt-4">
-            I specialize in{" "}
-            <strong className="text-gray-900">AI-driven products and platforms</strong>, translating ideas into production-ready systems that balance user value, technical depth, and speed of execution.
+            I&apos;m a builder at heart: I translate real-world problems into shipped
+            products, then improve them through usage data, experimentation,
+            customer feedback, and rapid iteration. My work sits at the
+            intersection of product thinking, technical execution, and AI.
           </p>
         </section>
 
