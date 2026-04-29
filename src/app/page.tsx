@@ -431,12 +431,24 @@ export default function Home() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    AI Systems &amp; Applications
+                    AI Product &amp; Strategy
                   </h3>
-                  <p className="text-gray-700">
-                    LLM application design, prompt engineering, RAG pipelines,
-                    structured outputs, evaluation frameworks, feedback loops,
-                    AI-driven insights systems
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>LLM Applications:</strong> Generative AI, LLM
+                    Applications, Prompt Engineering, Prompt Optimization,
+                    Structured Outputs, Conversational AI
+                    <br />
+                    <strong>Retrieval &amp; Intelligence Systems:</strong> RAG
+                    Pipelines, Embeddings, Vector Search, Personalization
+                    Systems, Recommendation Systems, Knowledge Retrieval
+                    <br />
+                    <strong>Evaluation &amp; Experimentation:</strong> LLM
+                    Evaluation, AI Experimentation, A/B Testing, Feedback Loops,
+                    Hallucination Mitigation, Quality Measurement
+                    <br />
+                    <strong>Production AI Systems:</strong> Agentic Workflows,
+                    Function Calling, Tool Use, AI Observability, Cost
+                    Optimization, Latency Optimization
                   </p>
                 </div>
               </div>
@@ -449,12 +461,26 @@ export default function Home() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Full-Stack &amp; Infrastructure
+                    Technical
                   </h3>
-                  <p className="text-gray-700">
-                    AWS serverless (Lambda, API Gateway, DynamoDB, Step Functions,
-                    EventBridge), Bedrock, Cognito, REST APIs, Next.js, React
-                    Native, Vercel, scalable system design
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>Cloud &amp; Architecture:</strong> AWS, Serverless
+                    Architecture, Microservices, Distributed Systems, System
+                    Design, Backend Architecture
+                    <br />
+                    <strong>Development:</strong> React Native, Next.js, React,
+                    Node.js, TypeScript, JavaScript, Python
+                    <br />
+                    <strong>APIs &amp; Data:</strong> REST APIs, GraphQL, SQL,
+                    NoSQL, DynamoDB, Data Modeling
+                    <br />
+                    <strong>DevOps &amp; Delivery:</strong> CI/CD Pipelines,
+                    Git/GitHub, DevOps Fundamentals, Performance Optimization,
+                    Third-Party Integrations
+                    <br />
+                    <strong>Analytics &amp; Operations:</strong> PostHog,
+                    Firebase, Analytics Instrumentation, Observability,
+                    Monitoring
                   </p>
                 </div>
               </div>
@@ -467,12 +493,20 @@ export default function Home() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Product &amp; Growth Execution
+                    Product
                   </h3>
-                  <p className="text-gray-700">
-                    User discovery, rapid prototyping, analytics (PostHog),
-                    experimentation, product-market fit validation, onboarding and
-                    retention optimization
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>Strategy &amp; Execution:</strong> Product Strategy,
+                    Roadmapping, 0→1 Development, PMF, GTM
+                    <br />
+                    <strong>Growth:</strong> User Discovery, Activation,
+                    Retention, Pricing, Subscriptions
+                    <br />
+                    <strong>Analytics:</strong> KPIs, Product Analytics, A/B
+                    Testing, Funnel Optimization
+                    <br />
+                    <strong>Leadership:</strong> Stakeholder Management,
+                    Cross-functional Leadership, PRDs, Agile
                   </p>
                 </div>
               </div>
@@ -777,13 +811,10 @@ export default function Home() {
                   className="rounded-full object-cover flex-shrink-0"
                 />
                 <div className="flex-1">
-                  <div className="flex flex-wrap justify-between items-start gap-2 mb-2">
+                  <div className="mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">
                       Agentic AI Certificate
                     </h3>
-                    <span className="text-sm font-semibold text-teal-700 bg-teal-100 px-2 py-1 rounded-full shrink-0">
-                      Completed, 2025
-                    </span>
                   </div>
                   <p className="text-teal-700 font-medium mb-2">
                     DeepLearning.AI
