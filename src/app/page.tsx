@@ -24,10 +24,21 @@ import { SiAppstore, SiGoogleplay } from "react-icons/si";
 
 export default function Home() {
   const [expandedCards, setExpandedCards] = useState<number[]>([0]);
+  const [expandedResumeSections, setExpandedResumeSections] = useState<
+    string[]
+  >([]);
 
   const toggleCard = (index: number) => {
     setExpandedCards((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
+
+  const toggleResumeSection = (section: string) => {
+    setExpandedResumeSections((prev) =>
+      prev.includes(section)
+        ? prev.filter((item) => item !== section)
+        : [...prev, section]
     );
   };
 
@@ -112,79 +123,6 @@ export default function Home() {
             customer feedback, and rapid iteration. My work sits at the
             intersection of product thinking, technical execution, and AI.
           </p>
-        </section>
-
-        {/* AI Product Principles Section */}
-        <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            AI Product Principles
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-red-50">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
-                  <FaHeart className="text-red-500 text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Build What Actually Matters
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    I focus on real user problems, not ideas that sound good in theory. Every product starts with understanding behavior, needs, and friction—then building solutions people genuinely use.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-blue-50">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
-                  <FaPuzzlePiece className="text-blue-500 text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Iterate to Real-World Fit
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    I ship fast, learn from real usage, and refine continuously. Product–market fit isn&apos;t guessed—it&apos;s discovered through cycles of building, measuring, and improving.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-green-50">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
-                  <FaTools className="text-green-600 text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Own the Full Stack
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    I take products end to end—from user research and UX to AI systems, backend, frontend, and production deployment. I don&apos;t stop at strategy—I make it real.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-purple-50">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
-                  <FaBalanceScale className="text-purple-500 text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Balance Intuition with Data
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Strong product instincts matter, but decisions are grounded in user behavior, system signals, and measurable outcomes—not opinions alone.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* Work Products Section */}
@@ -542,14 +480,114 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Product Principles Section */}
+        <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+            Product Principles
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-red-50">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-1">
+                  <FaHeart className="text-red-500 text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Build What Actually Matters
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I focus on real user problems, not ideas that sound good in theory. Every product starts with understanding behavior, needs, and friction—then building solutions people genuinely use.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-blue-50">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-1">
+                  <FaPuzzlePiece className="text-blue-500 text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Iterate to Real-World Fit
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I ship fast, learn from real usage, and refine continuously. Product–market fit isn&apos;t guessed—it&apos;s discovered through cycles of building, measuring, and improving.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-green-50">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-1">
+                  <FaTools className="text-green-600 text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Bridge Strategy and Execution
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    I connect product strategy with hands-on technical execution,
+                    working across UX, AI systems, backend, frontend, and cloud
+                    infrastructure. I can prototype when needed, make informed
+                    tradeoffs, and partner closely with engineers to move products
+                    from idea to production.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-purple-50">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-1">
+                  <FaBalanceScale className="text-purple-500 text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Balance Intuition with Data
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Strong product instincts matter, but decisions are grounded in user behavior, system signals, and measurable outcomes—not opinions alone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Experience Section */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <div className="flex items-center mb-6">
-            <FaBriefcase className="text-blue-600 mr-3" size={24} />
-            <h2 className="text-2xl font-semibold text-gray-900">Experience</h2>
-          </div>
+          <button
+            type="button"
+            className="flex w-full items-start justify-between text-left"
+            onClick={() => toggleResumeSection("experience")}
+            aria-expanded={expandedResumeSections.includes("experience")}
+          >
+            <div>
+              <div className="flex items-center">
+                <FaBriefcase className="text-blue-600 mr-3" size={24} />
+                <h2 className="text-2xl font-semibold text-gray-900">
+                  Experience
+                </h2>
+              </div>
+              <p className="mt-2 text-sm text-gray-500">
+                Digital health product leadership, AI product building, identity
+                platforms, and enterprise modernization
+              </p>
+            </div>
+            <div className="flex-shrink-0 ml-4 mt-1">
+              {expandedResumeSections.includes("experience") ? (
+                <FaChevronUp className="text-gray-500" />
+              ) : (
+                <FaChevronDown className="text-gray-500" />
+              )}
+            </div>
+          </button>
 
-          <div className="space-y-8">
+          {expandedResumeSections.includes("experience") && (
+          <div className="space-y-8 mt-6">
             <div className="border-l-4 border-blue-600 pl-6">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -564,18 +602,56 @@ export default function Home() {
               </p>
               <ul className="text-gray-700 space-y-1">
                 <li>
-                  • Lead digital health product initiatives, driving adoption of
-                  modern identity, access, and verification solutions
+                  • Joined as Product Lead for the F&amp;MCW Mobile App, owning
+                  roadmap and delivery for the patient-facing mobile experience
+                  serving 100K+ active patients; led improvements in performance,
+                  usability, and app store sentiment
                 </li>
                 <li>
-                  • Partner with engineering and clinical stakeholders to define
-                  product strategy, roadmaps, and requirements for
-                  patient-facing platforms
+                  • Advanced into Domain Product Lead for Identity Management,
+                  directing large-scale platform transformations including Okta
+                  authentication rollout, migration of 100K+ patient accounts, and
+                  identity verification enhancements with CLEAR
                 </li>
                 <li>
-                  • Manage delivery of cloud-native applications (TypeScript,
-                  Identity, AWS) ensuring scalability, compliance, and seamless
-                  user experience
+                  • Partner with engineering, clinical, security, and compliance
+                  stakeholders to define product strategy, roadmaps, and
+                  requirements while balancing security, compliance, and user
+                  experience
+                </li>
+                <li>
+                  • Manage delivery of cloud-native identity and patient-facing
+                  applications (TypeScript, Identity, AWS), ensuring scalability,
+                  reliability, and seamless digital health experiences
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-sky-600 pl-6">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Founder / AI Product Builder
+                </h3>
+                <span className="text-sm text-gray-500">2025 – 2026</span>
+              </div>
+              <p className="text-sky-600 font-medium mb-2">
+                Coach Kai – AI Nutrition App
+              </p>
+              <ul className="text-gray-700 space-y-1">
+                <li>
+                  • Built and launched an AI-powered nutrition coaching mobile app
+                  from 0 → 1, owning product strategy, UX, engineering, and
+                  go-to-market; shipped to iOS and Android within 4 months
+                </li>
+                <li>
+                  • Built an LLM-native coaching system using prompt engineering
+                  and structured outputs to deliver personalized meal insights and
+                  adaptive guidance
+                </li>
+                <li>
+                  • Used product analytics, experimentation, and user feedback to
+                  improve onboarding, engagement, retention, and subscription
+                  conversion
                 </li>
               </ul>
             </div>
@@ -657,16 +733,40 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          )}
         </section>
 
         {/* Education Section */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <div className="flex items-center mb-6">
-            <FaGraduationCap className="text-green-600 mr-3" size={24} />
-            <h2 className="text-2xl font-semibold text-gray-900">Education</h2>
-          </div>
+          <button
+            type="button"
+            className="flex w-full items-start justify-between text-left"
+            onClick={() => toggleResumeSection("education")}
+            aria-expanded={expandedResumeSections.includes("education")}
+          >
+            <div>
+              <div className="flex items-center">
+                <FaGraduationCap className="text-green-600 mr-3" size={24} />
+                <h2 className="text-2xl font-semibold text-gray-900">
+                  Education
+                </h2>
+              </div>
+              <p className="mt-2 text-sm text-gray-500">
+                Technology innovation, software engineering, electronics, and
+                agentic AI training
+              </p>
+            </div>
+            <div className="flex-shrink-0 ml-4 mt-1">
+              {expandedResumeSections.includes("education") ? (
+                <FaChevronUp className="text-gray-500" />
+              ) : (
+                <FaChevronDown className="text-gray-500" />
+              )}
+            </div>
+          </button>
 
-          <div className="space-y-8">
+          {expandedResumeSections.includes("education") && (
+          <div className="space-y-8 mt-6">
             <div className="border-l-4 border-teal-600 pl-6">
               <div className="flex items-start gap-4 mb-2">
                 <Image
@@ -784,6 +884,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          )}
         </section>
       </main>
     </div>
