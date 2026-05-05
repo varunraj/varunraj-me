@@ -19,6 +19,7 @@ import {
   FaProjectDiagram,
 } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { SiAppstore, SiGoogleplay } from "react-icons/si";
 
@@ -192,7 +193,7 @@ export default function Home() {
                           />
                           <span>Product Demo</span>
                         </a>
-                        <a
+                        <Link
                           href="/coach-kai/product-docs"
                           className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
                         >
@@ -201,7 +202,7 @@ export default function Home() {
                             aria-hidden
                           />
                           <span>Product Docs</span>
-                        </a>
+                        </Link>
                         <a
                           href="https://apps.apple.com/us/app/coach-kai/id6759616598"
                           className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
@@ -250,7 +251,7 @@ export default function Home() {
                         </li>
                       </ul>
                       <div className="flex flex-wrap items-center gap-2 mt-3 ml-4">
-                        <a
+                        <Link
                           href="/coach-kai/technical-docs"
                           className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
                         >
@@ -259,7 +260,7 @@ export default function Home() {
                             aria-hidden
                           />
                           <span>Technical Docs</span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div>
