@@ -193,6 +193,16 @@ export default function Home() {
                           <span>Product Demo</span>
                         </a>
                         <a
+                          href="/coach-kai/product-docs"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                        >
+                          <FaExternalLinkAlt
+                            className="text-base text-blue-700 shrink-0"
+                            aria-hidden
+                          />
+                          <span>Product Docs</span>
+                        </a>
+                        <a
                           href="https://apps.apple.com/us/app/coach-kai/id6759616598"
                           className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
                           target="_blank"
