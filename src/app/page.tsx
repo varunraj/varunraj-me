@@ -146,47 +146,6 @@ export default function Home() {
                       and activity logs into personalized, behavior-driven
                       guidance.
                     </p>
-                    <div
-                      className="flex flex-wrap items-center gap-2 mt-3"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <a
-                        href="http://coachkai.life/"
-                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaExternalLinkAlt
-                          className="text-base text-blue-700 shrink-0"
-                          aria-hidden
-                        />
-                        <span>Product Demo</span>
-                      </a>
-                      <a
-                        href="https://apps.apple.com/us/app/coach-kai/id6759616598"
-                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <SiAppstore
-                          className="text-[1.35rem] text-gray-900 shrink-0"
-                          aria-hidden
-                        />
-                        <span>App Store</span>
-                      </a>
-                      <a
-                        href="https://play.google.com/store/apps/details?id=com.coachkai.app&hl=en-US&ah=Txs8zCRf4kUikQDQAKYSG-cwuNw"
-                        className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-emerald-900 bg-white/90 border border-emerald-200 shadow-sm hover:bg-emerald-50 hover:border-emerald-300 hover:shadow-md transition-all"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <SiGoogleplay
-                          className="text-[1.35rem] shrink-0"
-                          aria-hidden
-                        />
-                        <span>Google Play</span>
-                      </a>
-                    </div>
                   </div>
                   <div className="flex-shrink-0 ml-4">
                     {expandedCards.includes(0) ? (
@@ -200,11 +159,8 @@ export default function Home() {
 
               {expandedCards.includes(0) && (
                 <div className="px-6 pb-6 border-t border-gray-100">
-                  <div className="pt-4 space-y-4">
+                  <div className="pt-2 space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                        Product &amp; Build Approach:
-                      </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
                           • Identified a real user problem around inconsistent
@@ -222,6 +178,51 @@ export default function Home() {
                           inputs (voice/text), maintains context over time, and
                           delivers adaptive coaching insights
                         </li>
+                      </ul>
+                      <div className="flex flex-wrap items-center gap-2 mt-3 ml-4">
+                        <a
+                          href="http://coachkai.life/"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaExternalLinkAlt
+                            className="text-base text-blue-700 shrink-0"
+                            aria-hidden
+                          />
+                          <span>Product Demo</span>
+                        </a>
+                        <a
+                          href="https://apps.apple.com/us/app/coach-kai/id6759616598"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SiAppstore
+                            className="text-[1.35rem] text-gray-900 shrink-0"
+                            aria-hidden
+                          />
+                          <span>App Store</span>
+                        </a>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.coachkai.app&hl=en-US&ah=Txs8zCRf4kUikQDQAKYSG-cwuNw"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-emerald-900 bg-white/90 border border-emerald-200 shadow-sm hover:bg-emerald-50 hover:border-emerald-300 hover:shadow-md transition-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SiGoogleplay
+                            className="text-[1.35rem] shrink-0"
+                            aria-hidden
+                          />
+                          <span>Google Play</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2 mt-4">
+                        Technical Implementation:
+                      </h4>
+                      <ul className="text-sm text-gray-700 space-y-1 ml-4">
                         <li>
                           • Built end-to-end system using React Native (Expo),
                           AWS serverless (Lambda, DynamoDB, S3), and LLM-powered
@@ -238,9 +239,21 @@ export default function Home() {
                           effectiveness
                         </li>
                       </ul>
+                      <div className="flex flex-wrap items-center gap-2 mt-3 ml-4">
+                        <a
+                          href="/coach-kai/technical-docs"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                        >
+                          <FaExternalLinkAlt
+                            className="text-base text-blue-700 shrink-0"
+                            aria-hidden
+                          />
+                          <span>Technical Docs</span>
+                        </a>
+                      </div>
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2 mt-4">
                         Iteration &amp; Growth:
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
@@ -262,7 +275,7 @@ export default function Home() {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2 mt-4">
                         Outcome:
                       </h4>
                       <ul className="text-sm text-gray-700 space-y-1 ml-4">
