@@ -203,30 +203,6 @@ export default function Home() {
                           />
                           <span>Product Docs</span>
                         </Link>
-                        <a
-                          href="https://apps.apple.com/us/app/coach-kai/id6759616598"
-                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <SiAppstore
-                            className="text-[1.35rem] text-gray-900 shrink-0"
-                            aria-hidden
-                          />
-                          <span>App Store</span>
-                        </a>
-                        <a
-                          href="https://play.google.com/store/apps/details?id=com.coachkai.app&hl=en-US&ah=Txs8zCRf4kUikQDQAKYSG-cwuNw"
-                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-emerald-900 bg-white/90 border border-emerald-200 shadow-sm hover:bg-emerald-50 hover:border-emerald-300 hover:shadow-md transition-all"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <SiGoogleplay
-                            className="text-[1.35rem] shrink-0"
-                            aria-hidden
-                          />
-                          <span>Google Play</span>
-                        </a>
                       </div>
                     </div>
                     <div>
@@ -296,6 +272,32 @@ export default function Home() {
                           product, engineering, and early-stage growth
                         </li>
                       </ul>
+                      <div className="flex flex-wrap items-center gap-2 mt-3 ml-4">
+                        <a
+                          href="https://apps.apple.com/us/app/coach-kai/id6759616598"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-blue-900 bg-white/90 border border-blue-200 shadow-sm hover:bg-blue-50 hover:border-blue-300 hover:shadow-md transition-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SiAppstore
+                            className="text-[1.35rem] text-gray-900 shrink-0"
+                            aria-hidden
+                          />
+                          <span>App Store</span>
+                        </a>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.coachkai.app&hl=en-US&ah=Txs8zCRf4kUikQDQAKYSG-cwuNw"
+                          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-emerald-900 bg-white/90 border border-emerald-200 shadow-sm hover:bg-emerald-50 hover:border-emerald-300 hover:shadow-md transition-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SiGoogleplay
+                            className="text-[1.35rem] shrink-0"
+                            aria-hidden
+                          />
+                          <span>Google Play</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
