@@ -10,7 +10,7 @@ const productDocs = [
   },
   {
     title: "Kai Flywheel",
-    href: "https://www.notion.so/Kai-Flywheel-dfbbe7fd84e24970b2aa68e614965189?t=35a3a8b7312380bfa93e00a97df8fa99",
+    href: "https://www.notion.so/Kai-Flywheel-35a3a8b73123802e92b8f457774945c7",
   },
   {
     title: "Kai 2.0 Brainstorming Board",
